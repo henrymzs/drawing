@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhe</title>
+    <link rel="stylesheet" href="../styles/drawing.css">
+</head>
+
+<body>
+    <div id="global_container">
+        <header id="header">
+            <h1 class="text_primary">Desenh<span class="point">.</span><span class="e_text">E</span><span class="point">.</span><span class="text_secondary">Seu Papel de Parede</span></h1>
+        </header>
+        <main id="main">
+            <div class="container_main">
+                <aside id="aside">
+                    <h3>Paleta de Cores</h3>
+                    <input type="color" id="drawColor" title="Escolha uma cor" value="#000000">
+                    <select id="tool" class="form-control">
+                        <option value="">Escolha</option>
+                        <option value="rectangle">Retângulo</option>
+                        <option value="freehand">Mão Livre</option>
+                        <option value="circle">Círculo</option>
+                        <option value="eraser">Borracha</option>
+                    </select>
+                    <button id="clearCanvas">Limpar</button>
+                </aside>
+                <section class="section tool canvasContainer">
+                    <canvas id="drawingCanvas"></canvas>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>
